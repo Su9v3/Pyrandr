@@ -15,7 +15,7 @@ for i in range(gdkdsp.get_n_monitors()):
 
 print("Monitors detected: " + str(allmonitors))
 
-brightness = input("Monitor brightness to adjust to (0-1): ")
+brightness = input("Monitor brightness to adjust to: ")
 
 for monitor in allmonitors:
     subprocess.run(["xrandr", "--output", monitor, "--brightness", brightness])
